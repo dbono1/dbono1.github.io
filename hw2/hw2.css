@@ -1,0 +1,16 @@
+body{
+    background-color: #000;
+}
+
+main{
+    display: flex;
+    max-width: 500px;
+}
+
+.left-img {
+    flex-basis: 100px;
+}
+
+.text{
+    flex-grow: 1;
+}
