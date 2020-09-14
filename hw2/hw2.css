@@ -1,16 +1,44 @@
 body{
     background-color: #000;
+    color: #FFF;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: rgb(68, 255, 246);
+}
+
+a:visited{
+    color: rgb(68, 171, 255);
 }
 
 main{
     display: flex;
-    max-width: 500px;
+    gap: 30px;
+    text-align: justify;
 }
 
-.left-img {
+.center-img-wrapper{
+    text-align: center;
+}
+
+#comic-film-img{
+    margin-top: 12px;
+}
+
+#left-img {
     flex-basis: 100px;
+    vertical-align: center;
 }
 
-.text{
+#sink-img{
+    height: 300px;
+    display: inline-block;
+}
+
+#text{
     flex-grow: 1;
 }
