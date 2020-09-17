@@ -1,6 +1,27 @@
 body {
-    background-image: url("https://source.unsplash.com/random/1920x1080");
+    max-width: 1000px;
+    background-color: #FAFAFA;
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    display: flex;
+    padding: 7px;
+}
+
+nav {
+    flex-basis: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    padding-right: 7px;
+    background-color: #DDDDDD;
+    margin: 0;
+}
+
+
+#homepage-content {
+    flex-grow: 1;
+    padding-left: 7px;
+    margin: 0;
 }
