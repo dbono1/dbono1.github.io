@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(255, 225, 181);
+    width: 100%;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#flag {
+    display: flex;
+}
+
+div#flag div.flag-part{
+    min-height: 500px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 500px;
+    line-height: 500px;
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 10px;
+    cursor: pointer;
+}
+
+span {
+    display: inline-block;
+}
+
+div#flag div#red {
+    background-color: #b60000;
+}
+
+div#flag div#white {
+    background-color: #ffffff;
+}
+
+div#flag div#green {
+    background-color: #006d00;
+}
+
