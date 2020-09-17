@@ -15,9 +15,11 @@ nav {
     min-width: 200px;
     max-width: 200px;
     padding-right: 7px;
-    background-color: #ff5555;
+    background-color: #DDD;
     margin: 0;
 }
+
+nav
 
 
 #homepage-content {
