@@ -1,47 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Bono's Website for Info&Web Programming</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-    <header>
-        <h1>David Bono's Info&Web Website</h1>
-        <hr>
-    </header>
-    <main>
-        <nav>
-            <ul>
-                <li><a href="hw2/hw2.html">Week 2 Response about Comics</a></li>
-            </ul>
-        </nav>
-        <div id="homepage-content">
-            <h2>About</h2>
-            <p>Hello, this website is to house links for David Bono's work for Info & Web Programming at Fordham RH Fall 2020. Any other website would have more content here, but I'm not really sure what to put. Links to posts are on the left side navbar of this page.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>David Bono's Website</title>
+        <link rel="stylesheet" type="text/css" href="n_index.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/header.css">
+    </head>
+    <body>
+        <header>
+            <div id="left"   class="header-part"></div>
+            <div id="middle" class="header-part">
+                <h1>David Bono's Website</h1>
+            </div>
+            <div id="right"  class="header-part">
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/work">Work</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1>Welcome</h1>
+            <div id="content">
+                <p>This website was created for Professor Leopold's <a href="https://github.com/rebleo/infoWeb2020">Information and Web Programming Class</a> at <a href="https://fordham.edu">Fordham College Rose Hill</a> for the Fall 2020 semester. The flag below is just something I was playing around with, but my work for the class can be found <a href="/work">here.</a></p>
+            </div>
+            <div id="flag">
+                <div id="green" class="flag-part" onclick="window.location='https://lacucinaitaliana.com'"><span>Food<br><hr><br></span></div>
+                <div id="white" class="flag-part" onclick="window.location='https://unsplash.com/s/photos/italy'"><span>Places<br><hr><br></span></div>
+                <div id="red"   class="flag-part" onclick="window.location='https://lacucinaitaliana.com'"><span>Il Cibo<br><hr><br></span></div>
+            </div>
+        </main>
+        <footer>
 
-            <h2>About Me</h2>
-            <p>I am a student. I also am the research director for Fordham's Computer Science Society. Check out my bio <a href="https://fordhamcss.org/staff/2020/06/01/david-bono-staff-announcement.html">here</a>. There's also a secret on that website. I casually mentioned this in one of our meetings, I'm waiting to see if people pick up on it. Maybe if someone does some good OSINT and finds this page, then they can get rewarded with the <a href="https://fordhamcss.org/terminal">link</a> to start the hunt for the secret.</p>
-
-            <p>My favorite languages are: python, c++, and Italian. Se tu parli italiano, per favore, inviami un messaggio. Sto sempre cercando per qualcuno con cui posso practicare il mio Italiano. Voglio solo essere fluente nella lingua.</p>
-
-            <p>Also, delete Chrome, and install Firefox, and switch your search engine to <a href="https://duckduckgo.com">DuckDuckGo</a>. The search results for DuckDuckGo are on par, if not better (in my opinion), but the coolest feature is their <a href="https://duckduckgo.com/bang">Bang! commands.</a></p>
-
-            <p>Here are some of my favorite DuckDuckGo searches:
-                <ul>
-                    <li><a href="https://duckduckgo.com/?t=ffab&q=random+name&ia=answer">random name</a></li>
-                    <li><a href="https://duckduckgo.com/?q=password+generator+12+characters&t=ffab&ia=answer">password generator 12 characters</a></li>
-                    <li><a href="https://duckduckgo.com/?q=!gten+Ciao+Tutti!">!gten Ciao Tutti!</a>(This is one of those Bang! commands. !gten will take the succeeding text and take you to google translate auto-detect to english)</li>
-                    <li><a href="https://duckduckgo.com/?t=ffab&q=2048&ia=answer">2048</a></li>
-                    <li><a href="https://duckduckgo.com/?q=base64+encode+%3Center+some+random+string+you+want+to+encode+in+base+64%3E&t=ffab&ia=answer">base64 encode &lt;enter some random string you want to encode in base 64&gt;</a></li>
-                </ul>
-            </p>
-            <button onclick="window.location.href='https://sofiaIhopeyouunderstandthis.com'"></button>
-        </div>
-    </main>
-    <footer>
-        <hr>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
