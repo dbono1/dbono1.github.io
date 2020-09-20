@@ -1,0 +1,31 @@
+footer{
+    border-top: #000 solid 10px;
+    background-color: rgb(182, 145, 90);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer div {
+    flex-basis: 300px;
+    min-width: 300px;
+    flex-grow: 1;
+    padding-left: 30px;
+    padding-right:30px;
+}
+
+footer a{
+    color: #000;
+}
+
+footer a:visited{
+    color: #000;
+}
+
+footer a:hover{
+    color: rgb(90, 90, 90);
+}
+
+footer div#right {
+    text-align: right;
+}

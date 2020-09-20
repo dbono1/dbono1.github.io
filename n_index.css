@@ -18,11 +18,16 @@ a:visited {
 
 main{
     margin-top: 75px;
+    margin-bottom: 75px;
     padding: 5px;
-    text-align: center;
 }
 
-main #content {
+.center{
+    text-align: center;
+    width: 100%;
+}
+
+main .content {
     text-align: justify;
     max-width: 1000px;
     margin: 0 auto;
@@ -32,6 +37,7 @@ main #content {
 
 #flag {
     display: flex;
+    height: 550px;
 }
 
 div#flag div.flag-part{

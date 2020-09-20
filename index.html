@@ -23,8 +23,8 @@
             </div>
         </header>
         <main>
-            <h1>Welcome</h1>
-            <div id="content">
+            <div class="content">
+                <h1>Welcome</h1>
                 <p>This website was created for Professor Leopold's <a href="https://github.com/rebleo/infoWeb2020">Information and Web Programming Class</a> at <a href="https://fordham.edu">Fordham College Rose Hill</a> for the Fall 2020 semester. The flag below is just something I was playing around with, but my work for the class can be found <a href="/work">here.</a></p>
             </div>
             <div id="flag">
@@ -32,9 +32,31 @@
                 <div id="white" class="flag-part" onclick="window.location='https://unsplash.com/s/photos/italy'"><span>Places<br><hr><br></span></div>
                 <div id="red"   class="flag-part" onclick="window.location='https://lacucinaitaliana.com'"><span>Il Cibo<br><hr><br></span></div>
             </div>
+            <div class="content">
+                <h1>Notable Things</h1>
+                <p>I'm really just adding this here for filler, because I feel like the front page should have more content, but I don't know what to put. I'm going to use this space to discuss DuckDuckGo and Firefox.</p>
+                <h2>Duck Duck Go</h2>
+                <p><a href="https://duckduckgo.com">Duck Duck Go</a> is a search engine designed around privacy. There are no advertising trackers built in to the site. The ads that show up on Duck Duck Go are content-based ads and not behavior based ads. I've recently switched from using google search to DuckDuckGo, and have not experienced any substantial issues trying to find things. If you run into an issue, however, you can preface your search with "!g" and it will automatically bring up the Google results for your query.</p>
+                <h3>Bang! Commands</h3>
+                <p>This gets me to my next point about DuckDuckGo. Their innovative <a href="https://duckduckgo.com/bang">Bang!</a> commands allow you to use the web in a whole different way. There are over 11,000 search shortcuts where you can interact with other sites directly from the DuckDuckGo search bar. For example, if you search "!a Dell XPS 15", it will automatically bring you to the search results on amazon for "Dell XPS 15". <br>
+                    <br>The coolest usage of this feature, in my opinion is automatic translation. If there is some text that you want to translate to english (for example), you can preface your search with "!gten" and it will bring you to google translate for whatever succeeded "!gten" (to illustrate this, go try it yourself! Search on DuckDuckGo: "!gten Ciao Tutti!").</p>
+                <h3>Instant Answers</h3>
+                <p>The other cool feature of DuckDuckGo is their <a href="https://help.duckduckgo.com/duckduckgo-help-pages/features/instant-answers-and-other-features/">Instant Answers</a> feature. Google has a similar feature, but in my opinion, DuckDuckGo does it better because you can do things like <a href="https://duckduckgo.com/?t=ffab&q=random+name">generate a random name</a>, <a href="https://duckduckgo.com/?q=random+password+12&t=ffab&ia=answer">generate a random 12 character password</a>, <a href="https://duckduckgo.com/?q=base64+decode+dGhpcyBpcyBzbyBjb29s&t=ffab&ia=answer">decode base64 encrypted text.</a></p>
+                <h2>Firefox</h2>
+                <p><a href="https://mozilla.org">Mozilla Firefox</a> is a web browser, designed around data privacy and data protection. By default, Mozilla Firefox blocks different trackers that cause ads to show up for "new laptops" in your facebook feed, after you were just searching google hours ago for new laptops. To demonstrate this, look at the four trackers that get blocked from <a href="https://nytimes.com">The New York Times</a> just simply by using Firefox.</p>
+                <span class="center"><img src="/assets/img/nytimestrackers.png"></span>
+                <p>The other benefit of Firefox, over other browsers that have tracking-blocking-features (like brave) is that it runs it's own web engine. There are three major browser engines in 2020; Chromium (Google), Webkit (Apple), and Gecko (Mozilla). We used to have one from Microsoft, which used to run Microsoft Edge, but Microsoft recently redesigned Edge to run on the Chromium engine, so the Microsoft engine will essentially die off. <br><br> As annoying as it may be to have to develop some things specifically for different browser engines (-moz- or -webkit- prefixes for attributes in css), having a diverse set of browser engines helps contribute to the notion of a "free and open internet". When the power about how to view the web is distributed amongst different people, we can avoid a scenario where one company or organization gets to dictate how people experience the internet.</p>
+            </div>
         </main>
         <footer>
-            <p>all rights reserved</p>
+            <div id="left"><p>Copyleft David Bono Inc. All lefts reserved.</p></div>
+            <div id="right">
+                <p>
+                    <a href="https://fordhamcss.org/terminal">Terminal</a><br>
+                    <a href="https://duckduckgo.com">DuckDuckGo</a><br>
+                    <a href="https://mozilla.org">Firefox</a>
+                </p>
+            </div>
         </footer>
     </body>
 </html>
