@@ -35,6 +35,10 @@ main .content {
     padding-right: 50px;
 }
 
+main .content img {
+    max-width: 100%;
+}
+
 #flag {
     display: flex;
     height: 550px;
