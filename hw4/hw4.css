@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(255, 225, 181);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+a {
+    color: #b60000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #a00404;
+}
+
+main{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    padding: 5px;
+}
+
+h2, h3, h4 {
+    color: #b60000;
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+    width: 100%;
+}
+
+main .content {
+    text-align: justify;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+main .content img {
+    max-width: 100%;
+}
