@@ -1,0 +1,165 @@
+body {
+    background-color: rgb(80, 138, 247);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+a {
+    color: #b60000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #a00404;
+}
+
+main{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    padding: 5px;
+}
+
+h2, h3, h4 {
+    color: #b60000;
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+    width: 100%;
+}
+
+main .content {
+    text-align: justify;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+main .content img {
+    max-width: 100%;
+}
+
+#flag {
+    display: flex;
+    height: 550px;
+}
+
+div#flag div.flag-part{
+    min-height: 500px;
+    display: flex;
+    text-align: center;
+    height: 500px;
+    flex-basis: 400px;
+    line-height: 50px;
+    font-size: 30px;
+    flex-grow: 1;
+    margin: 10px;
+    cursor: pointer;
+}
+
+div#flag div.flag-part span{
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+div#flag div.flag-part hr{
+    opacity: 0%;
+}
+
+div#flag div.flag-part:hover hr{
+    opacity: 100%;
+    width: 65%;
+    border-top: 1px solid #FFF;
+    transition: 1s;
+}
+
+div#flag div.flag-part:hover{
+    height: 510px;
+    transition: 0.2s;
+}
+
+span {
+    display: inline-block;
+}
+
+div#flag div#red {
+    background-color: #b60000;
+    color: rgba(0,0,0,0);
+}
+
+div#flag div#red:hover {
+    background-image: linear-gradient(rgba(0,0,0,0),#b60000), url("/assets/img/pastared.jpg");
+    color: #FFF;
+    background-size: cover;
+    background-position-y: bottom;
+    transition: 1s;
+}
+
+div#flag div#white {
+    background-color: #ffffff;
+    color: rgba(0,0,0,0);
+}
+
+div#flag div#white:hover{
+    background-image: linear-gradient(rgba(0,0,0,0),#FFF), url("/assets/img/lagalleriavittorioemmanuele.jpg");
+    color: #000;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+div#flag div#green {
+    background: #006d00;
+    color: rgba(0,0,0,0)
+}
+
+div#flag div#green:hover {
+    background-image: linear-gradient(rgba(0,0,0,0),#006d00), url("/assets/img/pastagreen.jpg");
+    color: #FFF;
+    background-size: cover;
+    background-position-x: right;
+    transition: 1s;
+}
+
+
+.image2 {
+      width: 1200px;
+      height: 750px;
+      display: block;
+      float: right;
+      margin: 10px;
+      padding: 10px;
+      clear: both;
+    }
+
+
+.image1 {
+      width: 100px;
+      height: 45px;
+      display: block;
+      float: right;
+      margin: 10px;
+      padding: 10px;
+      clear: both;
+
+    }
+
+.image3 {
+      width: 100px;
+      height: 45px;
+      display: block;
+      float: right;
+      margin: 10px;
+      padding: 10px;
+      clear: both;
+    
+    }

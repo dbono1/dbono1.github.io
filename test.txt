@@ -1,0 +1,8 @@
+(ab)* (ba)* | aa*
+
+
+(ab)* = {e, ab, abab, ababab, ...}
+
+(ba)* = {e, ba, baba, bababa, ...}
+
+aa*   = {a, aa, aaa, aaaa, ...}

@@ -1,0 +1,56 @@
+
+header {
+    margin-top: 0;
+    min-height: 75px;
+    max-height: 75px;
+    background-color: rgb(133, 149, 180);
+    border-bottom: 7px solid #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-part{
+    flex-basis: 200px;
+    height: 100%;
+    min-width: 100px;
+    width: 100px;
+}
+
+header #middle {
+    flex-grow: 3;
+    line-height: 75px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav a{
+    line-height: 75px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:visited{
+    color: #000;
+}
+
+nav a:hover{
+    border-bottom: #000 solid 10px;
+    color: #000;
+    background-color: rgb(93, 98, 107);
+    transition: 0.1s;
+}

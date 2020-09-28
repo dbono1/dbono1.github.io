@@ -1,6 +1,7 @@
 var work = [
     {"title":"Comics", "slug":"week02", "link":"/hw2/hw2.html", "date":"2020-09-10"},
-    {"title":"Week 04", "slug":"week04", "link":"/hw4/hw4.html", "date":"2020-09-20"}
+    {"title":"Week 04", "slug":"week04", "link":"/hw4/hw4.html", "date":"2020-09-20"},
+    {"title":"Slideshow", "slug":"week04", "link":"/slideshow/project.html", "date":"2020-09-20"}
 ]
 
 function setRecentWork() {

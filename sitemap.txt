@@ -1,0 +1,50 @@
+SITEMAP
+
+root
+| - assets
+|   | - img
+|   |   | - screenshot1.jpg
+|   |   | - screenshot2.jpg
+|   |   | - screenshot3.jpg
+|   | - css
+|   |   | - slide.css
+| - slides
+|   | - slide1.html
+|   | - slide2.html
+|   | - slide3.html
+|   | - slide4.html
+|   | - slide5.html
+|   | - slide6.html
+|   | - slide7.html
+|   | - slide8.html
+|   | - end.html
+| - index.html
+
+/assets/style.css
+
+/
+    title slide     (David)      [title]
+
+/slides/slide1.html (David)      [info]
+    about the guy
+
+/slides/slide2.html (Muneeb)     [info]
+    about how he uses photoshop
+
+/slides/slide3.html (Muneeb)     [info]
+    about photoshop as a tool 
+
+(The rest are photos of his work) [content slides]
+/slides/slide4.html (David)                
+/slides/slide5.html (Muneeb) - tennis ball
+/slides/slide6.html (David)
+/slides/slide7.html (Muneeb)
+/slides/slide8.html (David)
+
+
+/slides/end.html    (Muneeb)    [title]
+
+Slide Designs
+ - title (David)
+ - info
+ - content
