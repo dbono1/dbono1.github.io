@@ -21,11 +21,6 @@ function add_messages(){
             message_preview_container = document.getElementById('msg-preview').innerHTML;
             message_preview_template = message_preview_container.innerHTML;
             dom_msg.innerHTML += message_preview_container;
-
-            document.getElementsByClassName('msg-ctr-live')[1+i].onclick = function(){
-                console.log(window.location.href, "screens/message_window.html#" + obj['name']);
-                window.location.href="screens/message_window.html#" + obj['name'];
-            }
         }
         else{
             new_innerHTML += `
@@ -38,11 +33,16 @@ function add_messages(){
             </div>`;
 
         }
-        
-        //TODO: be able to fill this content
     }
 
-   dom_msg.innerHTML += new_innerHTML;
+    dom_msg.innerHTML += new_innerHTML;
+
+    var clickables = document.getElementsByClassName('msg-ctr-live')
+    if(clickables.length > 1) {
+        clickables[1].onclick = function(){
+            window.location.href="message_window.html#" + "socrates";
+        }
+    }
 }
 
 function first_notif(){
@@ -58,6 +58,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 window.onload = () => {
     console.log("loaded");
-    setTimeout(first_notif, 10000);
+    setTimeout(first_notif, 7000);
 }
 

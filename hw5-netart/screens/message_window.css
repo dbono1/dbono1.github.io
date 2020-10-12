@@ -12,6 +12,8 @@ header {
     height: 12vh;
     min-height: 12vh;
     border-bottom: solid 0.1vh rgb(191, 191, 191);
+    display: flex;
+    justify-content: center;
 }
 
 main {
@@ -99,6 +101,21 @@ footer #input-bar #text-input #send-button {
     border: none;
     text-align: center;
     padding: 0;
+    visibility: hidden;
+}
+
+footer #input-bar #text-input #send-button-disable {
+    display: inline-block;
+    height: 2.5vh;
+    width: 2.5vh;
+    border-radius: 1.25vh;
+    margin-top: 0.5vh;
+    background: #868a93;
+    background-size: contain;
+    margin-right: 0.5vh;
+    border: none;
+    text-align: center;
+    padding: 0;
 }
 
 footer #input-bar #text-input #send-button:hover {
@@ -110,4 +127,27 @@ footer #input-bar #text-input #send-button img{
     height: 80%;
     position: relative;
     left: 1px;
+}
+
+footer #input-bar #text-input #send-button-disable img{
+    height: 80%;
+    position: relative;
+    left: 1px;
+}
+
+
+#contact-name{
+    height: 7vh;
+    width: 7vh;
+    border-radius: 3.5vh;
+    background: linear-gradient(#a5aab5,#868a93);
+    font-size: 4vh;
+    color: #FFF;
+    line-height: 7vh;
+    text-align: center;
+    margin-top: 1.5vh;
+}
+
+#contact-full-name{
+    line-height: 2vh;
 }

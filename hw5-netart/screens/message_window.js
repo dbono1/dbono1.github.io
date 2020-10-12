@@ -1,12 +1,14 @@
 
 
 var message_index = 0;
-
+var users_turn = true;
 var dialogue = parent.dialogue;
 
 function same_as_previous(i){
     return i==0? false : dialogue[i]['name'] == dialogue[i-1]['name'];
 }
+
+
 
 function next_message(){
     var i = message_index;
@@ -24,6 +26,23 @@ function next_message(){
     var msgs = document.getElementsByTagName('main')[0].children;
     msgs[msgs.length-1].scrollIntoView();
 
+    if(dialogue.length != i+1)
+    {
+        //if the next message is for the user
+        if(dialogue[i+1]['name']=="CRITO"){
+            document.getElementById('send-button').style.visibility = "visible";
+            document.getElementById('send-button').style.display = "inline-block";
+            document.getElementById('send-button-disable').style.visibility = "hidden";
+            document.getElementById('send-button-disable').style.display = "none";
+        }
+        else{
+            document.getElementById('send-button').style.visibility = "hidden";
+            document.getElementById('send-button').style.display = "none";
+            document.getElementById('send-button-disable').style.visibility = "visible";
+            document.getElementById('send-button-disable').style.display = "inline-block";
+            setTimeout(next_message, Math.floor(Math.random()*3000)+1000);
+        }
+    }
 }
 
 next_message();
