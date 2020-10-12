@@ -1,0 +1,100 @@
+body {
+    height: 100%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    overflow: hidden;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#new-message {
+    height: 3vh;
+    padding: 1vh;
+    text-align: right;
+}
+
+#notification:hover {
+    cursor: hand;
+}
+
+#new-message img{
+    display: inline-block;
+    height: 100%;
+}
+
+#new-message img:hover{
+    filter: brightness(1.37);
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+}
+
+#msg-preview{
+    display:none;
+    visibility: hidden;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 11vh;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: #FFF;
+    width: 100vw;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    text-align: left;
+}
+
+.msg-ctr-live:hover{
+    cursor: pointer;
+    background-color: #d2d3d6;
+}
+
+.msg-ctr-live:focus{
+    border: none;
+}
+
+.message-container .message-preview-picture{
+    flex-basis: 10vw;
+    margin-right: 3vw;
+}
+
+.message-container .message-preview{
+    border-top: solid 0.1vh rgb(191, 191, 191);
+    flex-grow: 1;
+}
+
+.message-preview-picture-content{
+    height: 7vh;
+    width: 7vh;
+    border-radius: 3.5vh;
+    background: linear-gradient(#a5aab5,#868a93);
+    font-size: 4vh;
+    color: #FFF;
+    line-height: 7vh;
+    text-align: center;
+    margin-top: 1.5vh;
+}
+
+.blue {
+    background-color: #0784fc;
+}
+
+.white {
+    background-color: white;
+}
+
+.new-message {
+    height: 1.5vh;
+    width: 1.5vh;
+    border-radius: 0.75vh;
+    margin-right: 1.75vh;
+    margin-left: 1.75vh;
+    margin-top:4.75vh;
+    margin-bottom: 4.75vh;
+}

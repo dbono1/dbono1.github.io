@@ -1,0 +1,80 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(116, 116, 116);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+iframe {
+    border: none;
+    overflow: hidden;
+}
+
+#screen {
+    display: block;
+    margin: 0 auto;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+#time-bar {
+    height: 2vh;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#time-bar .inner{
+    height: 100%;
+}
+
+#screen iframe {
+    flex-grow: 1;
+}
+
+#notification {
+    position: absolute;
+    top: -150px;
+    border-radius: 10px;
+    background: #e4e4e4;
+    height: 100px;
+}
+
+#notification #header {
+    display: flex;
+    height: 20px;
+    margin: 1vh;
+    justify-content: space-between;
+}
+
+#notification #header img {
+    height: 100%;
+}
+
+#notification #header #messages {
+    flex-grow: 2;
+    padding-left: 1vh
+}
+
+#notification #notification-subject {
+    font-weight: bold;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    
+}
+
+#notification #notification-content {
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
