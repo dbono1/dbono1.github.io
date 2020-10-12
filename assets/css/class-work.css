@@ -10,6 +10,10 @@
     background: linear-gradient(rgba(0,0,0,0), #000), url(/assets/img/week04.jpg);
 }
 
+#week05{
+    background: linear-gradient(rgba(0,0,0,0), #000), url(/assets/img/week05-plato.jpg);
+}
+
 #class-work a {
     width: 100px;
     height: 200px;

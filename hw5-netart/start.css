@@ -1,0 +1,28 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(116, 116, 116);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    text-align: center;
+}
+
+main{
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 900px;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+a:visited {
+    color: lightskyblue;
+}

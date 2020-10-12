@@ -40,7 +40,9 @@ function next_message(){
             document.getElementById('send-button').style.display = "none";
             document.getElementById('send-button-disable').style.visibility = "visible";
             document.getElementById('send-button-disable').style.display = "inline-block";
-            setTimeout(next_message, Math.floor(Math.random()*3000)+1000);
+            var next_message_time = Math.floor((Math.floor(Math.random()*3000)+1000)*(dialogue[i]['content'].split(' ').length/10));
+            console.log(next_message_time)
+            setTimeout(next_message, next_message_time);
         }
     }
 }
