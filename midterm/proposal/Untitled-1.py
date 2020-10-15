@@ -1,0 +1,1 @@
+[print(all([x == 'a' for x in str('a'*i + 'b'*i)[:len(str('a'*i + 'b'*i))//2]]) and all([x == 'b' for x in str('a'*i + 'b'*i)[len(str('a'*i + 'b'*i))//2:]])) for i in range(1,11)]
