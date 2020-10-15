@@ -3,7 +3,7 @@ var work = [
     {"title":"Week 04", "slug":"week04", "link":"/hw4/hw4.html", "date":"2020-09-20"},
     {"title":"Slideshow", "slug":"week04", "link":"/slideshow/project.html", "date":"2020-09-20"},
     {"title":"The Crito", "slug":"week05", "link":"/hw5-netart/hw5-start.html", "date":"2020-10-10"},
-    {"title":"MidtermProposal", "slug":"midterm", "link":"/midterm/proposal/proposal.html", "date":"2020-10-15"}
+    {"title":"Midterm Prop", "slug":"midterm", "link":"/midterm/proposal/proposal.html", "date":"2020-10-15"}
 ]
 
 function setRecentWork() {

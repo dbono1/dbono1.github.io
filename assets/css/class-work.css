@@ -14,6 +14,10 @@
     background: linear-gradient(rgba(0,0,0,0), #000), url(/assets/img/week05-plato.jpg);
 }
 
+#midterm {
+    background: linear-gradient(rgba(0,0,0,0), #000), url(/assets/img/midterm.jpg);
+}
+
 #class-work a {
     width: 100px;
     height: 200px;
@@ -24,3 +28,4 @@
     line-height: 350px;
     text-align: center;
 }
+
