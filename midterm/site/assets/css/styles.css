@@ -49,7 +49,7 @@
     color: inherit;
 }
 
-#container a, a:visited {
+#container a, #container a:visited {
     color: #2c2c2c;
 }
 
