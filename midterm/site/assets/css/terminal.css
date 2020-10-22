@@ -1,0 +1,90 @@
+@keyframes challenge-popup {
+    0% {
+        right: -30vw;
+        opacity: 0;
+    }
+    1% {
+        visibility: visible;
+        opacity: 1;
+    }
+    10% {
+        right: 0;
+    }
+    90% {
+        right: 0;
+    }
+    99% {
+        visibility: hidden;
+        opacity: 1;
+    }
+    100% {
+        right: -30vw;
+        opacity: 0;
+        display: none;
+    }
+}
+
+#popup {
+    height: 19vh;
+    width: 19vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    font-family: monospace;
+    position: absolute;
+    bottom: 3vh;
+    right: -30vw;
+    border-left: solid 1px #2c2c2c;
+    border-bottom: solid 1px #2c2c2c;
+    border-top: solid 1px #2c2c2c;
+    box-shadow: -5px -5px #2c2c2c;
+}
+.popup-animation {
+    animation: challenge-popup;
+    animation-duration: 13s;
+    animation-delay: 10s;
+}
+
+#q2-login {
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+    left: 25vw;
+    top: 25vh;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    overflow-x: hidden;
+}
+
+main {
+    background-color: #fff;
+}
+
+code {
+    font-family: monospace;
+    display: inline-block;
+}
+
+input {
+    font-family: monospace;
+    display: inline-block;
+    border: none;
+    display: flex-end;
+}
+
+input:focus {
+    border: none;
+}
+
+#multiline {
+    border: none;
+    width: 100%;   
+}
