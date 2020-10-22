@@ -49,7 +49,9 @@
     color: inherit;
 }
 
-
+a, a:visited {
+    color: #2c2c2c;
+}
 
 body{
     margin: 0 auto;
@@ -206,6 +208,12 @@ main {
     margin: 0 auto;
     width: 70%;
 }
+
+#map {
+    width:100%;
+    height: 40vh;
+}
+
 
 footer {
     width: 100%;
