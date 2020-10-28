@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
         new_child.style.animation = "falling-code";
         new_child.style.animationIterationCount = "infinite";
-        new_child.style.animationDirection = "normal";
+        new_child.style.animationDirection = Math.floor((Math.random() * 1000) + 1) == 5 ? "reverse" : "normal";
         new_child.style.animationDelay = Math.floor((Math.random() * 5) + 0) + "s";
-        new_child.style.animationDuration = Math.floor((Math.random() * 100) + 0)/10 + "s";
+        new_child.style.animationDuration = Math.floor((Math.random() * 1000) + 1)/100 + "s";
         
         el.appendChild(new_child);
     }

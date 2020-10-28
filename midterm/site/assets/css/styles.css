@@ -270,7 +270,7 @@ main {
 }
 
 footer {
-    width: 100%;
+    width: 100vw;
     color: #fff;
     border-top: solid 2px #fff;
     background-color: #2c2c2c;
@@ -278,7 +278,7 @@ footer {
     margin-bottom: 0px;
     display: flex;
     justify-content: space-between;
-    height: 4vh;
+    min-height: 4vh;
     line-height: 4vh;
     padding-bottom: 4vh;
 }
@@ -307,6 +307,7 @@ footer div a:hover {
     width: 400px;
     height: 300px;
     display: block;
+    position: relative;
 }
 
 #ripped-img, #leaky-code {
