@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         for(var j = 0; j < indent; j++){
             inner_str += "&nbsp;";
         }
-        inner_str += Math.floor((Math.random() * 1) + 0);
+        inner_str += Math.floor((Math.random() * 2) + 1)-1;
         new_child.innerHTML += inner_str;
         
         new_child.style.animation = "falling-code";
