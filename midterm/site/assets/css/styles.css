@@ -102,6 +102,10 @@
     color: #2c2c2c;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body{
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -303,7 +307,7 @@ footer div a:hover {
     width: 400px;
     height: 300px;
     display: block;
-    margin-left: 5vw;
+    margin-left:
 }
 
 #ripped-img, #leaky-code {
