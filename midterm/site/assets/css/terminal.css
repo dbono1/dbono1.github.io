@@ -51,7 +51,7 @@
     height: 50vh;
     width: 50vw;
     left: 25vw;
-    top: 25vh;
+    bottom: 25vh;
 }
 
 .hidden {
@@ -71,6 +71,7 @@ main {
 code {
     font-family: monospace;
     display: inline-block;
+    
 }
 
 input {
@@ -87,4 +88,10 @@ input:focus {
 #multiline {
     border: none;
     width: 100%;   
+}
+
+#ripped-img, #leaky-code {
+    width: 25vw;
+    height: 15vh;
+    background-color: red;
 }

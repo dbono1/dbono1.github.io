@@ -12,7 +12,6 @@
         color: #b0f3ff;
     }
 }
-
 @keyframes cookie-popup {
     0% {
         right: -25vw;
@@ -106,27 +105,25 @@ body{
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+    background: linear-gradient( #73acb8, #8e6fa1);
 }
 
 header {
     width: 100vw;
     min-height: 7vh;
 
-    color: #fff;
     line-height: 7vh;
 
     display: flex;
     flex-wrap: wrap;
     background-color: #2c2c2c;
-    border-bottom: solid 1vh #fff;
+
     transition: all 1s;
 
     margin: 0 auto;
 
     top: 0;
-}
 
-header:hover {
     border-bottom: solid 1vh #b0f3ff;
     color: #b0f3ff;
     animation-name: change-color;
@@ -157,31 +154,28 @@ header div#logo-container {
 
 h1, h2, h3, h4 {
     margin: 0 auto;
+    
 }
 
 h2 {
     line-height: 5vh;
-    border-bottom: solid 2px #b3b3b3;
-}
-
-h2:hover{
-    color: #b0f3ff;
+    color:#f5f5f5;
+    text-shadow: -2px 3px #000;
 }
 
 main {
-    background-color: #b3b3b3;
+    background-color: #7e7e7e;
     margin: 0 auto; 
 
-    padding-left: 20vw;
-    padding-right: 20vw;
+    max-width: 900px;
+    
     padding-top: 2vh;
-    padding-bottom: 2vh;
 
 }
 
 #header-image {
     background: url(https://images.unsplash.com/photo-1568564385710-e4cb06c0adcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1926&q=80);
-    filter: saturate(0);
+    filter: saturate(1.1);
     background-position-x: center;
     background-position-y: 70%;
     background-size: cover;
@@ -190,8 +184,36 @@ main {
     transition: all 1s;
 }
 
-#header-image:hover{
-    filter: saturate(1.1);
+#welcome {
+    margin-bottom: 1vh;
+}
+
+.top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.bottom {
+    clip-path: polygon(0% 10%, 0% 100%, 100% 100%, 100% 0%);
+}
+
+.middle {
+    clip-path: polygon(0% 10%, 0% 100%, 100% 90%, 100% 0%);
+}
+
+.pink {
+    background: #dfb0ff;
+}
+
+.blue {
+    background: #b0f3ff;
+}
+
+section {
+    padding: 5vh 5vh 5vh 5vh;
+}
+
+#team-header {
+    padding: 3vh 5vh 1vh 5vh;
 }
 
 #products-container {
@@ -201,6 +223,7 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
+    
 }
 #products-container div {
     flex-basis: 40%;
@@ -210,26 +233,25 @@ main {
 
 #photo{
     padding: 2vw;
-}
-
-#photo:hover {
     background-color: #dfb0ff;
     border-radius: 2vw;
+    box-shadow: -5px 5px #2c2c2c;
 }
 
 #designer {
     padding: 2vw;
-}
-
-#designer:hover {
     background: #b0f3ff;
     border-radius: 2vw;
+    box-shadow: -5px 5px #2c2c2c;
+}
+
+#terminal {
+    display: none;
 }
 
 .logos{
     display: inline-block;
     height: 200px;
-    filter: saturate(0);
     transition: all;
     transition-duration: 1s;
 }
@@ -238,13 +260,12 @@ main {
     text-align: center;
 }
 
-#products-container div:hover div img.logos {
-    filter:saturate(1);
-}
-
 #customer-testomonial {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #b0f3ff;
+    clip-path: polygon(0% 10%, 0% 100%, 100% 100%, 100% 0%);
 }
 
 .center {
@@ -261,25 +282,17 @@ main {
     height: 40vh;
 }
 
-#completed-terminal {
-    display: none;
-}
 
 footer {
     width: 100%;
-    color: #fff;
-    border-top: solid 2px #fff;
     background-color: #2c2c2c;
     bottom: 0;
     margin-bottom: 0px;
     display: flex;
     justify-content: space-between;
-    height: 4vh;
+    min-height: 4vh;
     line-height: 4vh;
     padding-bottom: 4vh;
-}
-
-footer:hover {
     color: #b0f3ff;
     border-top: solid 2px #b0f3ff;
 }
@@ -297,52 +310,4 @@ footer div a {
 
 footer div a:hover {
     font-weight: bold;
-}
-
-#terminal-link {
-    width: 400px;
-    height: 300px;
-    display: block;
-    margin-left: 5vw;
-}
-
-#ripped-img, #leaky-code {
-    width: inherit;
-    height: inherit;
-    position: absolute;
-}
-
-#leaky-code {
-    overflow: hidden;
-    background: rgb(0, 0, 0);
-    font-family: monospace;
-}
-
-.matrix {
-    color: #00FF00;
-    position: absolute;
-    transition-property: color;
-    transition-duration: 3s;
-}
-
-
-#leaky-code:hover .matrix{
-    color: #b0f3ff;
-    font-weight: bold;
-}
-
-#ripped-img {
-    pointer-events: none;
-}
-
-
-
-@keyframes falling-code {
-    0% {
-        top: -10%;
-    }
-
-    100% {
-        top: 110%;
-    }
 }
