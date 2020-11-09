@@ -1,0 +1,66 @@
+@keyframes fall {
+    0% {
+        margin-top: 26vh;
+    }
+    90% {
+        margin-top: 100vh;
+    }
+    100% {
+        margin-top: 100vh;
+    }
+}
+
+.falling-animation {
+    animation: fall;
+    animation-duration: 5s;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 75vw;
+    text-align: center;
+    line-height: 100vh;
+    background-color: rgb(1, 56, 25);
+}
+
+button {
+    position: absolute;
+    display: inline-block;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 25vh;
+    margin-top: 25vh;
+    background-color: rgb(233, 152, 152);
+    box-shadow: 0px 1vh #000;
+    border: none;
+    outline:none;
+}
+
+button:hover {
+    background-color: rgb(240, 195, 195);
+    cursor: pointer;
+    border: none;
+    outline:none;
+}
+
+button:active {
+    margin-top: 26vh;
+    box-shadow: 0px 0vh rgba(0,0,0,0);
+    border: none;
+    outline:none;
+}
+
+#photo {
+    position: absolute;
+    display:inline-block;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 24.5vh;
+    margin-top: 25vh;
+}
+
+
