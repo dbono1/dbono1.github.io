@@ -1,5 +1,6 @@
 #class-work {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #week02{

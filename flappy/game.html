@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="game.js" defer></script>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        #bird {
+            height: 5vh;
+            width: 5vh;
+            position: absolute;
+            left: 10vw;
+            background-color: gold;
+        }
+        #game {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        .pipe {
+            background-color: green;
+            height: 70vh;
+            position: absolute;
+        }
+        #score {
+            position: absolute;
+            width: 5vw;
+            height: 5vh;
+            background: purple;
+            color: white;
+            font-weight: bold;
+            left: 47.5vw;
+            top: 2.5vh;
+            text-align: center;
+        }
+    </style>
+    <div id="game">
+        <div id="bird"></div>
+    </div>
+    <div id="score"></div>
+</body>
+</html>
