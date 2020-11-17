@@ -93,8 +93,8 @@ function gameLoop() {
     //redraw the pipes
     for(let i=0; i < pipes.length; i++) {
         let pipe=pipes[i];
-        $("#" + pipe["id"] + "-top").css("left", pipe["x"] + "vw");
-        $("#" + pipe["id"] + "-bot").css("left", pipe["x"] + "vw");
+        $("#" + pipe["id"] + "-top").css("left", pipe["x"] + "vh");
+        $("#" + pipe["id"] + "-bot").css("left", pipe["x"] + "vh");
     }
     
     if(!game_over || y > 0) {
@@ -114,8 +114,8 @@ function addPipeToDocument(pipe) {
     $("#" + pipe["id"] + "-top").css("bottom", (20 + (d_pipe/2) + pipe["h"]) + "vh");
     $("#" + pipe["id"] + "-bot").css("bottom", (-70 + 20 - (d_pipe/2) + pipe["h"]) + "vh");
 
-    $("#" + pipe["id"] + "-top").css("left", pipe["x"] + "vw");
-    $("#" + pipe["id"] + "-bot").css("left", pipe["x"] + "vw");
+    $("#" + pipe["id"] + "-top").css("left", pipe["x"] + "vh");
+    $("#" + pipe["id"] + "-bot").css("left", pipe["x"] + "vh");
 
     $("#" + pipe["id"] + "-top").css("width", w_pipe + "vh");
     $("#" + pipe["id"] + "-bot").css("width", w_pipe + "vh");
