@@ -4,7 +4,7 @@ let score = 0;
 let started=false;
 let game_over = false;
 let last_counted = "";
-const target_score = 4;
+const target_score = 30;
 
 //motion variables (physics)
 let g = -9.8
