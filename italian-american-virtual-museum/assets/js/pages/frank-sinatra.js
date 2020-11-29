@@ -9,15 +9,15 @@ for(let i = 0; i < 10; i++) {
     let d = document.createElement("div");
     d.id = "building-" + i;
     d.style.height = heights[i] + "vh";
-    if(is_mobile()) {
-        d.style.backgroundColor = "black";
-    }
     buidling_div.appendChild(d);
 }
 
 if(is_mobile()) {
     document.querySelector("#sinatra-img").style.bottom = "0";
     document.body.style.overflowY = "scroll";
+    for(let i = 0; i < 10; i++) {
+        document.querySelector("#building-" + i).style.backgroundColor ="black";
+    }
 }
 
 var audio = new Audio("http://classes.design.ucla.edu/Fall07/153A/projects/nick/15-frank_sinatra-the_best_is_yet_to_come-atm.mp3");
