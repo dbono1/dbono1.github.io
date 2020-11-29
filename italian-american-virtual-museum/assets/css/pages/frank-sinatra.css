@@ -24,6 +24,7 @@ section p {
 }
 
 #play {
+    color: black;
     position: absolute;
     width: 100px;
     height: 50px;
