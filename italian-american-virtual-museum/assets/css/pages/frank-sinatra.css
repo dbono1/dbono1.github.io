@@ -4,7 +4,7 @@
 }
 
 img {
-    max-width: 100vw;
+    max-width: 99vw;
 }
 
 body {
@@ -41,6 +41,12 @@ section p {
 
 #play:hover {
     background-color: rgb(249, 249, 249);;
+}
+
+#paramount-img {
+    width: 400px;
+    height: 400px;
+    max-width: 99vw;
 }
 
 .black {
