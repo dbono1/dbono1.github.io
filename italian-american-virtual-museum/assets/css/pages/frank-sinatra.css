@@ -92,6 +92,7 @@ section p {
     background: linear-gradient(black 0%, rgb(39, 39, 39) 45%);
     display: flex;
     align-items: flex-end;
+    overflow-x: hidden;
 }
 
 .sub {
