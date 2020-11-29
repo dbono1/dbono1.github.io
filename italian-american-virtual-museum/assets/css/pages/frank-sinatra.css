@@ -124,7 +124,7 @@ section p {
     left: 30px;
     bottom: 0;
     width: 5vh;
-    height: 3vh;
+    height: 5vh;
     background-color: black;
 }
 
@@ -171,7 +171,7 @@ section p {
     }
 }
 
-#influence {
+.wrap-reverse {
     flex-wrap: wrap-reverse;
 }
 

@@ -29,17 +29,21 @@ let q_hover = false;
 qinfo.innerHTML = `<img id="quick-info-img">
 <p id="quick-info-text"></p>`;
 
+//link the css for the navbar
 link_css("nav");
 
+//event for mouse enter the info page
 qinfo.addEventListener("mouseenter", () => {
     q_hover = true;
 })
 
+//event for mouse leave the info page
 qinfo.addEventListener("mouseleave", () => {
     q_hover = false;
     close_info();
 })
 
+//open the side info tab
 function open_info(child_key) {
     var info = document.querySelector("#quick-info");
     info.classList.remove("close-info");
@@ -49,7 +53,10 @@ function open_info(child_key) {
     document.querySelector("#quick-info p#quick-info-text").innerHTML = info_content[child_key][1];
 }
 
+//close the info side panel
 function close_info() {
+    //but only if the mouse didn't leave the hover thing and also enter the info panel,
+    //then we wait for the user to leave the info panel to close it
     if( !q_hover){
         var info = document.querySelector("#quick-info");
         info.classList.remove("open-info");
@@ -57,7 +64,12 @@ function close_info() {
     }
 }
 
+//load the navbr
 function load_nav() {
+    //create a whole bunch of dom elements
+    //and add event listeners and stuff for the buttons
+    //in the navbar
+    //the navbar is built with bootstrap (hence the "data-toggle" options)
     for(var key in nav_contents) {
         let nav_content = nav_contents[key];
         let nav_item = document.createElement("button");
@@ -98,11 +110,23 @@ function load_nav() {
         }
     }
 
+    //add a link for the home option to go home
+    document.querySelector("#home").addEventListener("click", () => {
+        window.location.href="/italian-american-virtual-museum/";
+    })
+
+    //this will return true when the whole nav bar is loaded (kind of)
     return true;
 }
 
+//this function will underline any button on the
+//nav bar
+
+//this is used when an info page gets dynamically loaded
 function underline_button(button_key) {
     document.querySelector('#btn-' + button_key).style.textDecoration='underline';
 }
 
+//set the global variable "nav_loaded" to true,
+//when the nav bar actually gets loaded
 nav_loaded = load_nav();

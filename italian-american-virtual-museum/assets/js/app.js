@@ -1,3 +1,7 @@
+//define the root of the page
+//(incase the whole site needs to be moved to some subfolder,
+//all the javascript that links things prepends the "root" to
+//the path, so we can generate absolute paths)
 const root = "/italian-american-virtual-museum/"
 
 //functions to dynamically link css and js
@@ -23,6 +27,7 @@ function link_css_full_path(path) {
     document.querySelector('head').appendChild(css_link);
 }
 
+//link the generic CSS for the "app"
 link_css("app");
 
 //link the nav and header js "app"
