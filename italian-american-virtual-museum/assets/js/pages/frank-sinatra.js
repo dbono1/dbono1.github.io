@@ -1,9 +1,6 @@
 //set the page tab heading
 document.querySelector('title').innerHTML = "Frank Sinatra";
 
-//check mobile
-link_js("check-mobile");
-
 var buidling_div = document.querySelector("#building-holders");
 
 let heights = [45, 30, 60, 25, 35, 30, 27, 20, 26, 40]
