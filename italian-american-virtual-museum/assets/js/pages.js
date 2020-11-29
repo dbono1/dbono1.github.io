@@ -22,6 +22,7 @@ function init() {
     let iframe = document.createElement('iframe');
     iframe.setAttribute('src', root + 'assets/html/' + page_key + ".html");
     
+
     //This is the event listener for "load" for the iframe
     //object that hasn't been loaded to the screen yet
     //After the iframe is loaded, we can then load the css, js, and render
