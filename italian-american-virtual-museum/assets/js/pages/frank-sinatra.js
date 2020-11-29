@@ -1,20 +1,35 @@
 //set the page tab heading
 document.querySelector('title').innerHTML = "Frank Sinatra";
 
+//check mobile
+link_js("check-mobile");
+
 var buidling_div = document.querySelector("#building-holders");
 
 let heights = [45, 30, 60, 25, 35, 30, 27, 20, 26, 40]
+
 for(let i = 0; i < 10; i++) {
     let d = document.createElement("div");
     d.id = "building-" + i;
     d.style.height = heights[i] + "vh";
+    if(is_mobile()) {
+        d.style.backgroundColor = "black";
+    }
     buidling_div.appendChild(d);
+}
+
+if(is_mobile()) {
+    document.querySelector("#sinatra-img").style.bottom = "0";
 }
 
 var audio = new Audio("http://classes.design.ucla.edu/Fall07/153A/projects/nick/15-frank_sinatra-the_best_is_yet_to_come-atm.mp3");
 
 //this function will start the animation
 function start_animation() {
+    if(is_mobile()) {
+        return;
+    }
+
     let offset = document.querySelector('header').clientHeight;
     document.querySelector('#first-screen').style.height = window.clientHeight - offset;
     
