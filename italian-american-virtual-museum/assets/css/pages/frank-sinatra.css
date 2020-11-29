@@ -44,9 +44,9 @@ section p {
 }
 
 #paramount-img {
-    width: 400px;
+    max-width: 400px;
     height: 400px;
-    max-width: 99vw;
+    
 }
 
 .black {
