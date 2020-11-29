@@ -130,7 +130,7 @@ document.querySelector("#play-audio").addEventListener("click", () => {
     }
 })
 
-if(true) {
+if(is_mobile()) {
     for(let i = 0; i < 10; i++){
         document.querySelector("#building-" + i).style.opacity = 1;
     }
