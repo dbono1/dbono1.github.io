@@ -17,6 +17,7 @@ for(let i = 0; i < 10; i++) {
 
 if(is_mobile()) {
     document.querySelector("#sinatra-img").style.bottom = "0";
+    document.body.style.overflowY = "scroll";
 }
 
 var audio = new Audio("http://classes.design.ucla.edu/Fall07/153A/projects/nick/15-frank_sinatra-the_best_is_yet_to_come-atm.mp3");
