@@ -135,5 +135,7 @@ document.querySelector("#play-audio").addEventListener("click", () => {
     }
 })
 
-window.scrollTo(0, 0);
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});
 //start_animation();
