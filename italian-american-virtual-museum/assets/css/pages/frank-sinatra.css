@@ -43,12 +43,6 @@ section p {
     background-color: rgb(249, 249, 249);;
 }
 
-#paramount-img {
-    max-width: 400px;
-    height: 400px;
-    
-}
-
 .black {
     background-color:black;
     color: white;
@@ -160,7 +154,20 @@ section p {
 #hoboken-img {
     margin: 25px auto;
     max-width: 400px;
-    max-height: 400px;
+}
+#paramount-img {
+    max-width: 400px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    #paramount-img, #hoboken-img {
+        max-width: 350px;
+        height: 350px;
+    }
+    .content {
+        max-width: 350px;
+    }
 }
 
 #influence {
