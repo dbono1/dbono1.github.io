@@ -12,13 +12,6 @@ for(let i = 0; i < 10; i++) {
     buidling_div.appendChild(d);
 }
 
-if(is_mobile()) {
-    document.querySelector("#first-screeen").remove();
-    document.querySelector("#play").remove();
-} else {
-    document.body.style.overflowY = "hidden";
-}
-
 var audio = new Audio("http://classes.design.ucla.edu/Fall07/153A/projects/nick/15-frank_sinatra-the_best_is_yet_to_come-atm.mp3");
 
 //this function will start the animation
@@ -120,16 +113,6 @@ function start_animation() {
     }, 8000);
 }
 
-anime({
-    targets: ".sub",
-    translateX: [
-        {value: -3000, duration: 0, delay: 0},
-        {value: 5000, duration: 20000, delay: 1}
-    ],
-    direction: "normal",
-    loop: true,
-    easing: "linear"
-})
 /**/ 
 document.querySelector("#play").addEventListener("click", ()=> {
     document.querySelector("#play").remove();
@@ -147,7 +130,27 @@ document.querySelector("#play-audio").addEventListener("click", () => {
     }
 })
 
+if(true) {
+    for(let i = 0; i < 10; i++){
+        document.querySelector("#building-" + i).style.opacity = 1;
+    }
+    document.querySelector("#play").remove();
+    document.querySelector("#sinatra-img").style.bottom = "0vh";
+} else {
+    document.body.style.overflowY = "hidden";
+}
+
 $(document).ready(function(){
     $(window).scrollTop(0);
 });
-//start_animation();
+
+anime({
+    targets: ".sub",
+    translateX: [
+        {value: -3000, duration: 0, delay: 0},
+        {value: 5000, duration: 20000, delay: 1}
+    ],
+    direction: "normal",
+    loop: true,
+    easing: "linear"
+})
