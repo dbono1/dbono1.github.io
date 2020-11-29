@@ -6,6 +6,7 @@
 body {
     overflow-y: hidden;
     overflow-x: hidden;
+    background: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -53,6 +54,7 @@ section p {
     display: inline-block;
     text-align: left;
     max-width: 1000px;
+    width: 1000px;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 25px;
@@ -67,10 +69,71 @@ section p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 }
 
 .flex-item {
     margin: 25px auto;
+    width: 400px;
+}
+
+.left {
+    margin: 25px auto;
+    width: 400px;
+}
+.right {
+    margin: 25px auto;
+    width: 400px;
+}
+
+#sub-flex {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(black 0%, rgb(39, 39, 39) 45%);
+    display: flex;
+    align-items: flex-end;
+}
+
+.sub {
+    position: relative;
+    height: 136px;
+    margin: 0;
+}
+
+#subway-light {
+    background-color: goldenrod;
+    min-width: 400px;
+    height: 136px; 
+    clip-path: polygon(
+        0% 20%,    
+        0% 5%,
+        100% 100%,
+        50% 100%
+    );
+}
+
+#audio-controls {
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    left: 30px;
+    bottom: 0;
+    width: 5vh;
+    height: 3vh;
+    background-color: black;
+}
+
+#play-audio {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+}
+
+#play-audio:hover {
+    background-color: rgb(51, 51, 51);
 }
 
 #birth {
@@ -89,9 +152,14 @@ section p {
     max-height: 400px;
 }
 
+#influence {
+    flex-wrap: wrap-reverse;
+}
+
 #first-screen {
     height: 90vh;
     width: 100vw;
+    background-color: white;
     display: flex;
     align-items: baseline;
     /*background: linear-gradient(white 0%, white 95%, black 95%, black 100% );*/

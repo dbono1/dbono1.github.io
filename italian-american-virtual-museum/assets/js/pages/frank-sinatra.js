@@ -101,12 +101,38 @@ function start_animation() {
     tl.play();
     audio.play();
 
-    setTimeout(()=> {document.body.style.overflowY = "scroll"}, 8000);
+    setTimeout(()=> {
+        document.body.style.overflowY = "scroll"
+        document.querySelector('#audio-controls').style.opacity = 1;
+        document.querySelector('#audio-controls').style.position = "sticky";
+    }, 8000);
 }
 
+anime({
+    targets: ".sub",
+    translateX: [
+        {value: -3000, duration: 0, delay: 0},
+        {value: 5000, duration: 20000, delay: 1}
+    ],
+    direction: "normal",
+    loop: true,
+    easing: "linear"
+})
+/**/ 
 document.querySelector("#play").addEventListener("click", ()=> {
     document.querySelector("#play").remove();
     start_animation();
+})
+
+document.querySelector("#play-audio").addEventListener("click", () => {
+    if(audio.paused) {
+        audio.play();
+        document.querySelector("#play-audio").innerHTML = "||";
+    }
+    else {
+        audio.pause();
+        document.querySelector("#play-audio").innerHTML = ">";
+    }
 })
 
 window.scrollTo(0, 0);
