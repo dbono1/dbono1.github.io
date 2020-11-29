@@ -98,8 +98,8 @@ function start_animation() {
         duration: 1000
     }, 8000);
 
-    tl.play();
     audio.play();
+    tl.play();
 
     setTimeout(()=> {
         document.body.style.overflowY = "scroll"
