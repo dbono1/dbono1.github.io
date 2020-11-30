@@ -13,7 +13,7 @@ body {
 main {
     flex-grow: 1;
     height: 70vh;
-    background-color: rgb(45, 61, 42);
+    background-color: olivedrab;
     text-align: center;
     padding: 10vh 20vw;
     color: white;
@@ -38,7 +38,7 @@ p {
     justify-content: space-between;
     padding: 0 5%;
     width: 90%;
-    background-color: black;
+    background-color: tomato;
 }
 
 button {
