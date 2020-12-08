@@ -1,6 +1,8 @@
 #class-work {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #week02{
@@ -22,6 +24,8 @@
 #class-work a {
     width: 100px;
     height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-size: cover;
     background-position: center;
     margin-left: 15px;

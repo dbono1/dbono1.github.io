@@ -1,9 +1,9 @@
 let nav_contents = {
     "Home": [],
     "Historical Events": [
-        "Mass Migration 1890-1920",
-        "New Orleans Lynching",
-        "World War II"
+        /*"Mass Migration 1890-1920",*/
+        "New Orleans Lynching"
+        /*"World War II"*/
     ],
     "People": [
         "Frank Sinatra"
@@ -11,12 +11,10 @@ let nav_contents = {
 }
 
 let info_content = {
-    "mass-migration-1890-1920": ["ellis-island.png", "From 1880 to 1915, 13 million Italians migrated out of Italy, making Italy the scene of the largest voluntary emigration in recorded world history.<a href='https://en.wikipedia.org/wiki/Italian_Americans#The_period_of_mass_immigration_(1890%E2%80%931920)'>wiki</a>"],
+    //"mass-migration-1890-1920": ["ellis-island.png", "From 1880 to 1915, 13 million Italians migrated out of Italy, making Italy the scene of the largest voluntary emigration in recorded world history.<a href='https://en.wikipedia.org/wiki/Italian_Americans#The_period_of_mass_immigration_(1890%E2%80%931920)'>wiki</a>"],
     "new-orleans-lynching": ["lynching.jpg", "The March 14, 1891, New Orleans lynchings were the murders of 11 Italian Americans in New Orleans, Louisiana, by a mob for their alleged role in the murder of city police chief David Hennessy after some of them had been acquitted at trial. It was one of the largest single mass lynchings in American history. <a href='https://en.wikipedia.org/wiki/March_14,_1891_New_Orleans_lynchings'>wiki</a>"],
-    "world-war-ii": ["wwii.jpg", "As a member of the Axis powers, Italy declared war on the United States in December 1941 after Japan attacked Pearl Harbor. Over 1.5 million Italian-Americans served in the armed forces during World War II, amounting to some 10% of American soldiers in total. <a href='https://en.wikipedia.org/wiki/Italian_Americans#World_War_II'>wiki</a>"],
+    //"world-war-ii": ["wwii.jpg", "As a member of the Axis powers, Italy declared war on the United States in December 1941 after Japan attacked Pearl Harbor. Over 1.5 million Italian-Americans served in the armed forces during World War II, amounting to some 10% of American soldiers in total. <a href='https://en.wikipedia.org/wiki/Italian_Americans#World_War_II'>wiki</a>"],
     "frank-sinatra": ["sinatra.jpg", "Francis Albert Sinatra (/sɪˈnɑːtrə/; December 12, 1915 – May 14, 1998) was an American singer, actor and producer who was one of the most popular and influential musical artists of the 20th century. He is one of the best-selling music artists of all time, having sold more than 150 million records worldwide. <a href='https://en.wikipedia.org/wiki/Frank_Sinatra'>wiki</a>"]
-    
-
 }
 
 //The below code renders the navbar from the 
